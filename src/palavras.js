@@ -24,4 +24,15 @@ const palavras = [
     "zebra", "zagueiro", "zero", "zoeira", "zodíaco", "zangão", "zepelim", "zinco", "zoológico", "zumbido"
 ]
 
-export default palavras
+const palavraAleatoria = palavras[Math.floor(Math.random() * palavras.length)]
+const palavraArray = []
+
+
+function arrayarPalavra () {
+    for (let i =0; i<palavraAleatoria.length; i++) {
+        palavraArray.push(palavraAleatoria[i])
+    }
+}
+arrayarPalavra();
+
+export default palavraArray;

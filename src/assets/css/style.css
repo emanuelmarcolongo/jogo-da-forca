@@ -1,0 +1,74 @@
+.conteudo {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+
+.conteudo button{
+    width: 200px;
+    height:  80px;
+    margin-left: 30%;
+    margin-top: 2%;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.botoes {
+    margin: 70px 10%;
+    width: 650px;
+}
+
+.botoes button {
+    width: 50px;
+    height: 50px;
+}
+
+.palavraSelecionada {
+    display: flex;
+    margin: 25% 0;
+}
+
+.letraPalavra {
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid cyan;
+}
+
+.forca {
+    width: 300px;
+    height: 500px;
+}
+
+.escondida {
+    display: none;
+}
+
+.verde {
+    background-color: green;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.chute {
+    width: 650px;
+    height: 70px;
+    margin: 70px 10%;
+}
+
+.chute input {
+    width: 500px;
+}
+
+.chute button {
+    width: 129px;
+}
