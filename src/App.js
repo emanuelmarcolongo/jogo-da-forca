@@ -65,20 +65,23 @@ function App() {
         }
 
         setPalavra([...arrayTeste1])
-        if(contadorErros >= 6) {
+        if (contadorErros >= 6) {
             fimJogo("lalkaklalkalk")
         }
     }
 
-  
+
     return (
         <>
             <div className="conteudo">
                 <img alt="imagemDaForca" className="forca" src={forca} />
 
-                <button disabled={escolher} onClick={() => {executaFuncoes(); setEscolher(true)}} className="escolhePalavra">Escolher Palavra</button>
+                <div class="botaoPalavra">
+                    <button disabled={escolher} onClick={() => { executaFuncoes(); setEscolher(true) }} className="escolhePalavra">Escolher Palavra</button>
 
-                <Palavra ganhou={ganhou} palavra={palavra} />
+                    <Palavra ganhou={ganhou} palavra={palavra} />
+                </div>
+
             </div>
 
             <Alfabeto comparaLetras={comparaLetras} palavra={palavra} disable={disable} />
@@ -125,6 +128,7 @@ function Chute(props) {
 
     return (
         <div className="chute">
+            <p>Já sei a palavra!</p>
             <input disabled={props.disable} onChange={e => setInput(e.target.value)} type="text" placeholder="digite seu chute"></input>
             <button disabled={props.disable} onClick={() => props.fimJogo(input)} disabled={props.disable} >Já sei a palavra</button>
         </div>

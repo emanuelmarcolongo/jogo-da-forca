@@ -1,26 +1,33 @@
 .conteudo {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    width: 50%;
     height: 50vh;
+    margin: 5% auto;
+    position: relative;
 }
 
 .conteudo button{
-    width: 200px;
+    width: 25%;
     height:  80px;
     margin-left: 30%;
     margin-top: 2%;
     border-radius: 15px;
     color: white;
-    background-color: black;
+    background-color: #0aca62;
     font-size: 20px;
     font-weight: 700;
+    position: absolute;
+    top: 10%;
+    right: 10%
 }
 
 .botoes {
     display: flex;
     margin: 70px 10%;
-    width: 650px;
+    width: 800px;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .botao {
@@ -33,11 +40,17 @@
 .botoes button {
     width: 50px;
     height: 50px;
+    color: white;
+    background-color: #0aca62;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 5px 5px;
 }
 
 .palavraSelecionada {
     display: flex;
-    margin: 25% 0;
+    margin: 300px 0;
+    height: 300px;
 }
 
 .letraPalavra {
@@ -69,15 +82,39 @@
 }
 
 .chute {
-    width: 650px;
-    height: 70px;
-    margin: 70px 10%;
+    width: 349px;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .chute input {
-    width: 500px;
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    
 }
 
 .chute button {
     width: 129px;
+    height: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 18px;
+    background-color: #0aca62;
+}
+
+.root {
+margin: 100px 100px;
+}
+
+.botoes button:disabled {
+    background-color: gray;
 }
