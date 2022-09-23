@@ -24,8 +24,18 @@ const palavras = [
     "zebra", "zagueiro", "zero", "zoeira", "zodíaco", "zangão", "zepelim", "zinco", "zoológico", "zumbido"
 ]
 
-const palavraAleatoria = palavras[Math.floor(Math.random() * palavras.length)]
+export const palavraAleatoria = palavras[Math.floor(Math.random() * palavras.length)]
 const palavraArray = []
+
+    let palavra1 = palavraAleatoria.replace("ó", "o" );
+    palavra1 = palavra1.replace("á", "a");
+    palavra1 = palavra1.replace("ã", "a")
+    palavra1 = palavra1.replace("ê", "e")
+    palavra1 = palavra1.replace("í", "i")
+    palavra1 = palavra1.replace("ú", "u")
+    palavra1 = palavra1.replace("ç", "c")
+
+    export const palavraReplace = palavra1
 
 
 function arrayarPalavra () {
@@ -33,6 +43,16 @@ function arrayarPalavra () {
         palavraArray.push(palavraAleatoria[i])
     }
 }
-arrayarPalavra();
 
+const newArray = [];
+function arrayarPalavraReplace () {
+    for (let i =0; i<palavra1.length; i++) {
+        newArray.push(palavra1[i])
+    }
+}
+
+arrayarPalavra();
+arrayarPalavraReplace();
+
+export const palavraArrayReplace = newArray;
 export default palavraArray;
