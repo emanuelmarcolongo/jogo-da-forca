@@ -28,7 +28,7 @@ function App() {
 
 
     function fimJogo(chute) {
-        if (chute === palavraAleatoria || chute === palavraReplace) {
+        if (chute === palavraAleatoria || chute === palavraReplace || palavra === palavraArray) {
             setGanhou("verde")
             setDisable(true);
             setPalavra(palavraArray)
@@ -50,6 +50,10 @@ function App() {
 
 
     function comparaLetras(parametro) {
+
+        console.log(palavraArray)
+
+  
         arrayTeste = [];
         arrayTeste.push(parametro)
         arrayErro = []
@@ -68,6 +72,7 @@ function App() {
         if (contadorErros >= 6) {
             fimJogo("lalkaklalkalk")
         }
+
     }
 
 
@@ -76,7 +81,7 @@ function App() {
             <div className="conteudo">
                 <img alt="imagemDaForca" className="forca" src={forca} />
 
-                <div class="botaoPalavra">
+                <div className="botaoPalavra">
                     <button disabled={escolher} onClick={() => { executaFuncoes(); setEscolher(true) }} className="escolhePalavra">Escolher Palavra</button>
 
                     <Palavra ganhou={ganhou} palavra={palavra} />
