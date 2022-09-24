@@ -3,8 +3,11 @@
     justify-content: space-between;
     width: 50%;
     height: 50vh;
-    margin: 5% auto;
+    margin: 0px auto 200px;
+    margin-top: 0 px;
     position: relative;
+
+
 }
 
 .conteudo button{
@@ -24,7 +27,6 @@
 
 .botoes {
     display: flex;
-    margin: 70px 10%;
     width: 800px;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -111,9 +113,6 @@
     background-color: #0aca62;
 }
 
-.root {
-margin: 100px 100px;
-}
 
 .botoes button:disabled {
     background-color: gray;
