@@ -51,9 +51,6 @@ function App() {
 
     function comparaLetras(parametro) {
 
-        console.log(palavraArray)
-
-  
         arrayTeste = [];
         arrayTeste.push(parametro)
         arrayErro = []
