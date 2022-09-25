@@ -28,11 +28,14 @@ export const palavraAleatoria = palavras[Math.floor(Math.random() * palavras.len
 const palavraArray = []
 
     let palavra1 = palavraAleatoria.replace("ó", "o" );
+    palavra1 = palavra1.replace("â", "a");
     palavra1 = palavra1.replace("á", "a");
     palavra1 = palavra1.replace("ã", "a")
     palavra1 = palavra1.replace("ê", "e")
+    palavra1 = palavra1.replace("é", "e")
     palavra1 = palavra1.replace("í", "i")
     palavra1 = palavra1.replace("ú", "u")
+    palavra1 = palavra1.replace("ü", "u")
     palavra1 = palavra1.replace("ç", "c")
 
     export const palavraReplace = palavra1
