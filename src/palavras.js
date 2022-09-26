@@ -24,10 +24,13 @@ const palavras = [
     "zebra", "zagueiro", "zero", "zoeira", "zodíaco", "zangão", "zepelim", "zinco", "zoológico", "zumbido"
 ]
 
+
 export const palavraAleatoria = palavras[Math.floor(Math.random() * palavras.length)]
 const palavraArray = []
 
     let palavra1 = palavraAleatoria.replace("ó", "o" );
+    palavra1 = palavra1.replace("ô", "o");
+    palavra1 = palavra1.replace("õ", "o");
     palavra1 = palavra1.replace("â", "a");
     palavra1 = palavra1.replace("á", "a");
     palavra1 = palavra1.replace("ã", "a")

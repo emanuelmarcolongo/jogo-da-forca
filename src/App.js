@@ -80,10 +80,10 @@ function App() {
     return (
         <>
             <div className="conteudo">
-                <img alt="imagemDaForca" className="forca" src={forca} />
+                <img data-identifier="game-image" alt="imagemDaForca" className="forca" src={forca} />
 
                 <div className="botaoPalavra">
-                    <button disabled={escolher} onClick={() => { executaFuncoes(); setEscolher(true) }} className="escolhePalavra">Escolher Palavra</button>
+                    <button data-identifier="choose-word" disabled={escolher} onClick={() => { executaFuncoes(); setEscolher(true) }} className="escolhePalavra">Escolher Palavra</button>
 
                     <Palavra ganhou={ganhou} palavra={palavra} />
                 </div>
@@ -111,7 +111,7 @@ function Alfabeto(props) {
     return (
         <div className="botoes">
             {alfabeto.map((l, index) =>
-                <Button disable={props.disable} comparaLetra={props.comparaLetras} key={index} l={l} />)}
+                <Button data-identifier="letter" disable={props.disable} comparaLetra={props.comparaLetras} key={index} l={l} />)}
         </div>)
 }
 
@@ -120,7 +120,7 @@ function Alfabeto(props) {
 function Palavra(props) {
 
     return (
-        <div className="palavraSelecionada">
+        <div data-identifier="word" className="palavraSelecionada">
             {props.palavra.map((l, index) =>
                 <div className={`letraPalavra ${props.ganhou}`} key={index}>
                     {l}
@@ -133,10 +133,10 @@ function Chute(props) {
     const [input, setInput] = useState("")
 
     return (
-        <div className="chute">
+        <div data-identifier="type-guess" className="chute">
             <p>Já sei a palavra!</p>
             <input disabled={props.disable} onChange={e => setInput(e.target.value)} type="text" placeholder="digite seu chute"></input>
-            <button disabled={props.disable} onClick={() => props.fimJogo(input)} disabled={props.disable} >Já sei a palavra</button>
+            <button data-identifier="guess-button" disabled={props.disable} onClick={() => props.fimJogo(input)}  >Já sei a palavra</button>
         </div>
     )
 }
