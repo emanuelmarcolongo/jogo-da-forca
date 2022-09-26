@@ -28,7 +28,7 @@ function App() {
 
 
     function fimJogo(chute) {
-        if (chute === palavraAleatoria || chute === palavraReplace || palavra === palavraArray) {
+        if (chute === palavraAleatoria || chute === palavraReplace ) {
             setGanhou("verde")
             setDisable(true);
             setPalavra(palavraArray)
@@ -50,7 +50,6 @@ function App() {
 
 
     function comparaLetras(parametro) {
-
         arrayTeste = [];
         arrayTeste.push(parametro)
         arrayErro = []
@@ -70,6 +69,11 @@ function App() {
             fimJogo("lalkaklalkalk")
         }
 
+        if (!arrayTeste1.includes("__")) {
+            setGanhou("verde")
+            setDisable(true);
+            setPalavra(palavraArray)
+        }
     }
 
 
